@@ -17,6 +17,8 @@
 #define OUTPUT 0001
 #define INPUT 0002
 
+void setup();
+void loop();
 
 
 #ifdef ARDUINO
@@ -215,7 +217,10 @@ void WritePin(const int pin, const bool value) {
 #endif 
 
 int main() {
-
+    setup();
+    while (true) {
+        loop();
+    }
   
 }
 
